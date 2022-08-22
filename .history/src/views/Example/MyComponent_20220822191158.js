@@ -54,7 +54,6 @@ class MyComponent extends React.Component {
                     name={this.state.firstName}
                     age={'25'}
                     adrress={'Ha noi'}
-                    arrJobs = {this.state.arrJobs}
                 />    
             </>
         )
