@@ -30,7 +30,7 @@ class MyComponent extends React.Component {
                 </div>
                 <div>Tôi ở {this.state.address}</div>
                 <div className="third">
-                    <button onClick={() => this.handleClickButton()}>Click me</button>
+                    <button onClick={}>Click me</button>
                 </div>
             </>
         )
