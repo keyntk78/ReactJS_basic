@@ -19,30 +19,24 @@ class MyComponent extends React.Component {
         })
     }
 
-    handleSubmit =(event) =>{
-        event.preventDefault(event)
-        console.log(">> Check Data: ", this.state)
-    }
-
     render() {
+        console.log("Render", this.state)
         return (
             <>
                 <form>
-                    <label htmlFor="fname">First name:</label><br/>
+                    <label for="fname">First name:</label><br/>
                     <input 
                         type="text"
                         value={this.state.firstName}
                         onChange = {(event) => this.handleChangeFirstName(event)}
                     /><br/>
-                    <label htmlFor="lname">Last name:</label><br></br>
+                    <label for="lname">Last name:</label><br></br>
                     <input 
                         type="text" 
                         value={this.state.lastName}
                         onChange={(event) => this.handleChangeLastName(event)}
                     /><br/><br/>
-                    <input type="submit" value="Submit"
-                        onClick={(event)=> this.handleSubmit(event)}
-                    />
+                    <input type="submit" value="Submit"/>
                 </form>
             </>
         )

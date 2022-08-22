@@ -21,7 +21,7 @@ class MyComponent extends React.Component {
 
     handleSubmit =(event) =>{
         event.preventDefault(event)
-        console.log(">> Check Data: ", this.state)
+        alert("Click Me");
     }
 
     render() {

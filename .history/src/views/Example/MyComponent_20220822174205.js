@@ -21,7 +21,7 @@ class MyComponent extends React.Component {
 
     handleSubmit =(event) =>{
         event.preventDefault(event)
-        console.log(">> Check Data: ", this.state)
+        alert("Click Me");
     }
 
     render() {
@@ -41,7 +41,7 @@ class MyComponent extends React.Component {
                         onChange={(event) => this.handleChangeLastName(event)}
                     /><br/><br/>
                     <input type="submit" value="Submit"
-                        onClick={(event)=> this.handleSubmit(event)}
+                        onClick={()=> this.handleSubmit()}
                     />
                 </form>
             </>
