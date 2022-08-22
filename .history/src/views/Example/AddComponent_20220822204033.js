@@ -21,7 +21,7 @@ class AddComponent extends React.Component {
 
     handleSubmit =(event) =>{
         event.preventDefault(event)
-        if(!this.state.title || !this.state.salary){
+        if(!this.state.title || !this.state){
             alert('Missing required paranms');
             return;
         }
