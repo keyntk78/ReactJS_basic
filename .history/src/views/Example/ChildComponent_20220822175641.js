@@ -1,7 +1,6 @@
 import React from "react";
-import ChildComponent from "./ChildComponent";
 
-class MyComponent extends React.Component { 
+class ChildComponent extends React.Component { 
 
     state = {
         firstName:'',
@@ -45,13 +44,9 @@ class MyComponent extends React.Component {
                         onClick={(event)=> this.handleSubmit(event)}
                     />
                 </form>
-                <ChildComponent 
-                    name={'child One'}
-                    age={'25'}
-                />    
             </>
         )
     }
 }
 
-export default MyComponent;
+export default ChildComponent;

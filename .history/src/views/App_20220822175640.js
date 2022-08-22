@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
 import MyComponent from './Example/MyComponent';
-
+import ChildComponent from './Example/ChildComponent';
 
 
 
@@ -11,6 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <MyComponent/>
+        <ChildComponent/>
       </header>
       
     </div>
