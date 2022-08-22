@@ -26,25 +26,10 @@ import React from "react";
 //     }
 // }
 
-const ChildComponent = (props) => {
-        let {name, age, adrress,arrJobs } = props;
-
-        return (
-            <>
-                <div>ChildComponent: {name} - {age} tuổi - {adrress}</div>
-                <div className="job-lists">
-                    {
-                        arrJobs.map((item, index) => {
-                            return (
-                                <div key={item.id}>
-                                    {item.title} - {item.salary}
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            </>
-        )
+const ChildComponent = () => {
+    return (
+        <div>Hello arro function</div>
+    )
 }
 
 export default ChildComponent;

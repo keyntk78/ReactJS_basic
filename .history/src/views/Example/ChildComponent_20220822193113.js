@@ -27,7 +27,7 @@ import React from "react";
 // }
 
 const ChildComponent = (props) => {
-        let {name, age, adrress,arrJobs } = props;
+        let {arrJobs } = props;
 
         return (
             <>
