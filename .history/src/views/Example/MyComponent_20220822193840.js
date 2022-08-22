@@ -27,7 +27,7 @@ class MyComponent extends React.Component {
 
     handleSubmit =(event) =>{
         event.preventDefault(event)
-        alert('InFo');
+        console.log(">> Check Data: ", this.state)
     }
 
     render() {
@@ -51,8 +51,7 @@ class MyComponent extends React.Component {
                     />
                 </form>
                 <ChildComponent 
-                    firstName={this.state.firstName}
-                    lastName={this.state.lastName}
+                    name={this.state.firstName}
                     age={'25'}
                     adrress={'Ha noi'}
                     arrJobs = {this.state.arrJobs}

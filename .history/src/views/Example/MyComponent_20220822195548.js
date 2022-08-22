@@ -27,7 +27,7 @@ class MyComponent extends React.Component {
 
     handleSubmit =(event) =>{
         event.preventDefault(event)
-        alert('InFo');
+        alert('InFo', this.state);
     }
 
     render() {

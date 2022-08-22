@@ -15,7 +15,7 @@ class ChildComponent extends React.Component {
     render() {
         let {showJobs} = this.state;
         let {firstName,lastName, age, adrress,arrJobs } = this.props;
-        // let check = showJobs === true ? 'showJobs = true' : 'showJobs = false'
+        let check = showJobs === true ? 'showJobs = true' : 'showJobs = false'
         return (
             <>
                 <div>ChildComponent: {firstName} {lastName} - {age} tuổi - {adrress}</div>

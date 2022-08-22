@@ -14,16 +14,17 @@ class ChildComponent extends React.Component {
     
     render() {
         let {showJobs} = this.state;
-        let {firstName,lastName, age, adrress,arrJobs } = this.props;
-        // let check = showJobs === true ? 'showJobs = true' : 'showJobs = false'
+        let {name, age, adrress,arrJobs } = this.props;
         return (
             <>
-                <div>ChildComponent: {firstName} {lastName} - {age} tuổi - {adrress}</div>
-                {showJobs === false ?
+                <div>ChildComponent: {name} - {age} tuổi - {adrress}</div>
+                {showJobs === false &&
                     <div>
                         <button onClick={()=>this.handleShowHide()}>Show</button>
                     </div>
-                :
+                }
+                
+                {showJobs &&
                     <>
                         <div className="job-lists">
                             {
@@ -36,9 +37,7 @@ class ChildComponent extends React.Component {
                                 })
                             }
                         </div>
-                        <div>
-                            <button onClick={()=>this.handleShowHide()} >Hide</button>
-                        </div>
+                        <div><button>Hide</button></div>
                     </>
                 }
             </>
