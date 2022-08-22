@@ -39,11 +39,7 @@ class ChildComponent extends React.Component {
                                     return (
                                         <div key={item.id}>
                                             {item.title} - {item.salary} $ 
-                                            <></> <span
-                                                className="btn-delete" 
-                                                onClick={()=>this.handleOnclickDelete(item)}>
-                                                x
-                                            </span>
+                                            <></> <span onClick={()=>this.handleOnclickDelete(item)}>x</span>
                                         </div>
                                     )
                                 })
