@@ -12,8 +12,8 @@ class ChildComponent extends React.Component {
         })
     }
 
-    handleOnclickDelete = (job) => {
-        this.props.deleteAJob(job)
+    handleOnclickDelete = () => {
+        alert('Click me');
     }
     
     render() {
@@ -34,7 +34,7 @@ class ChildComponent extends React.Component {
                                     return (
                                         <div key={item.id}>
                                             {item.title} - {item.salary} $ 
-                                            <></> <span onClick={()=>this.handleOnclickDelete(item)}>x</span>
+                                            <></> <span onClick={()=>this.handleOnclickDelete()}>x</span>
                                         </div>
                                     )
                                 })

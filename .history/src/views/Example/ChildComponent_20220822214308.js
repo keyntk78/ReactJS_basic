@@ -13,7 +13,7 @@ class ChildComponent extends React.Component {
     }
 
     handleOnclickDelete = (job) => {
-        this.props.deleteAJob(job)
+        alert('Click me');
     }
     
     render() {

@@ -39,7 +39,6 @@ class MyComponent extends React.Component {
                 />
                 <ChildComponent 
                     arrJobs = {this.state.arrJobs}
-                    deleteAJob={this.deleteAJob}
                 />    
             </>
         )

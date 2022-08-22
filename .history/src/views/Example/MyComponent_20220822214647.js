@@ -26,9 +26,6 @@ class MyComponent extends React.Component {
     deleteAJob =(job) =>{
         let currentJob = this.state.arrJobs;
         currentJob = currentJob.filter(item => item.id !== job.id);
-        this.setState({
-            arrJobs:currentJob
-        })
     }
 
     render() {
@@ -39,7 +36,6 @@ class MyComponent extends React.Component {
                 />
                 <ChildComponent 
                     arrJobs = {this.state.arrJobs}
-                    deleteAJob={this.deleteAJob}
                 />    
             </>
         )
