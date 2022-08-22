@@ -17,6 +17,8 @@ class MyComponent extends React.Component {
             <>
                 <AddComponent/>
                 <ChildComponent 
+                    age={'25'}
+                    adrress={'Ha noi'}
                     arrJobs = {this.state.arrJobs}
                 />    
             </>

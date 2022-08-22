@@ -12,11 +12,20 @@ class MyComponent extends React.Component {
         ]
     }
 
+
+
+    handleSubmit =(event) =>{
+        event.preventDefault(event)
+        alert('InFo');
+    }
+
     render() {
         return (
             <>
                 <AddComponent/>
                 <ChildComponent 
+                    age={'25'}
+                    adrress={'Ha noi'}
                     arrJobs = {this.state.arrJobs}
                 />    
             </>
