@@ -1,5 +1,4 @@
 import React from "react";
-// import { withRouter } from "react-router";
 import Colors from "./HOC/Color";
 
 class Home extends React.Component {
@@ -14,5 +13,3 @@ class Home extends React.Component {
 }
 
 export default Colors(Home);
-
-// export default withRouter(Home);
