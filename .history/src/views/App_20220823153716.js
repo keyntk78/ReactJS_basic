@@ -17,18 +17,6 @@ function App() {
         <header className="App-header">
           <Nav/>
           <img src={logo} className="App-logo" alt="logo" />
-          <Switch>
-            <Route path='/' exact>
-              <Home/>
-            </Route>
-            <Route path='/todo'>
-              <ListTodo/>
-            </Route>
-            <Route path='/about'>
-              <MyComponent/>
-            </Route>
-          </Switch>
-
         </header>
         
         <ToastContainer

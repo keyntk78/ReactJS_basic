@@ -72,7 +72,7 @@ class ListTodo extends React.Component{
         let isEmtyObj = Object.keys(editTodo).length === 0
         return (
             <>
-                <p>Todo App</p>
+                <p>Todo APP</p>
                 <div className="list-todo-container">
                     <AddTodo
                         addNewTodo = {this.addNewTodo}

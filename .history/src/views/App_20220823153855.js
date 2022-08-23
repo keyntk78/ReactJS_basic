@@ -17,17 +17,11 @@ function App() {
         <header className="App-header">
           <Nav/>
           <img src={logo} className="App-logo" alt="logo" />
-          <Switch>
-            <Route path='/' exact>
+          <switch>
+            <Route path='/'>
               <Home/>
             </Route>
-            <Route path='/todo'>
-              <ListTodo/>
-            </Route>
-            <Route path='/about'>
-              <MyComponent/>
-            </Route>
-          </Switch>
+          </switch>
 
         </header>
         

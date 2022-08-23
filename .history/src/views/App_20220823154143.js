@@ -18,14 +18,14 @@ function App() {
           <Nav/>
           <img src={logo} className="App-logo" alt="logo" />
           <Switch>
-            <Route path='/' exact>
+            <Route path='/'>
               <Home/>
             </Route>
             <Route path='/todo'>
               <ListTodo/>
             </Route>
-            <Route path='/about'>
-              <MyComponent/>
+            <Route path='/'>
+              <Home/>
             </Route>
           </Switch>
 
